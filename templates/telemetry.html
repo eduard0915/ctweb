@@ -1,0 +1,44 @@
+{% extends 'body.html' %}
+
+{% block content %}
+
+    <!-- -------- START Features w/ title, device and stats -------- -->
+<section class="py-3">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-5 mx-auto">
+        <div class="device-wrapper position-relative">
+          <img class="w-100 border-radius-lg shadow" src="{{ url_for('static', filename='lib/now-ui-design-system-pro-v2.2.0/assets/img/project14.jpg') }}">
+        </div>
+      </div>
+      <div class="col-lg-6 mx-auto mt-5">
+        <h3 class="mb-0">Sistema de Telemetría SensoScientific</h3>
+{#        <h3>Free Soft Design Resources</h3>#}
+        <p class="lead mb-5">Monitoreo de Temperatura y Húmedad Relativa en áreas, neveras, congeladores,
+            ultracongeladores de almacenamiento de reactivos, medicamentos, muestras, hemoderivados, entre otros.
+        </p>
+        <div class="row">
+          <div class="col-lg-6 col-6 mb-lg-3">
+            <h2 class="text-info">323</h2>
+            <p>Of “high-performing” level are led by a certified project manager</p>
+          </div>
+          <div class="col-lg-6 col-6 mb-lg-3">
+            <h2 class="text-info">500+</h2>
+            <p>That meets quality standards required by our users</p>
+          </div>
+          <div class="col-lg-6 col-6">
+            <h2 class="text-info">24/7</h2>
+            <p>Actively engage team members that finishes on time</p>
+          </div>
+          <div class="col-lg-6 col-6">
+            <h2 class="text-info">73</h2>
+            <p>Team members that finishes on time every project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- -------- END Features w/ title, device and stats -------- -->
+
+{% endblock %}

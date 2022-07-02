@@ -1,0 +1,121 @@
+{% extends 'body.html' %}
+
+
+{% block content %}
+
+    <section class="py-7 bg-cover position-relative"
+             style="background-image: url({{ url_for('static', filename='lib/now-ui-design-system-pro-v2.2.0/assets/img/bg3.jpg') }})">
+        <div class="mask bg-gradient-dark"></div>
+        <div class="container position-relative z-index-2">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 d-flex justify-content-center flex-column">
+                    <h2 class="text-white">Pongase en contacto con nosotros</h2>
+                    <p class="lead pe-5 text-white opacity-8 z-index-1">¿Necesitas más información sobre nuestros productos y servicios? Registre el siguiente formulario y pronto lo contactaremos.</p>
+                    <p class="mt-4 text-white opacity-8 z-index-1">Calle 4 # 75 - 71 <br> Cali, Valle del Cauca</p>
+                    <div class="d-flex p-2 text-white opacity-8">
+                        <div>
+                            <i class="fas fa-phone text-sm"></i>
+                        </div>
+                        <div class="ps-3">
+                            <span class="text-sm">(602) 3800 797 - 316 623 1887</span>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 text-white opacity-8">
+                        <div>
+                            <i class="fas fa-envelope text-sm"></i>
+                        </div>
+                        <div class="ps-3">
+                            <span class="text-sm">ventas@cieltechno.com</span>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 text-white opacity-8">
+                        <div>
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <div class="ps-3">
+                            <span class="text-sm">(+57) 316 623 1887</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 m-auto">
+                    <div class="card card-contact card-raised">
+                        <form id="contact-form1" method="post">
+                            <div class="card-header text-center pt-4">
+                                <h5 class="card-title">Contactenos</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 pe-2">
+                                        <label>Nombre Completo</label>
+                                        <div class="input-group input-group-sm mb-4">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ps-2">
+                                        <div class="form-group">
+                                            <label>Empresa</label>
+                                            <div class="input-group input-group-sm mb-4">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pe-2">
+                                        <label>Cargo</label>
+                                        <div class="input-group input-group-sm mb-4">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ps-2">
+                                        <div class="form-group">
+                                            <label>Telefóno</label>
+                                            <div class="input-group input-group-sm mb-4">
+                                                <input class="form-control" type="tel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pe-2">
+                                        <label>Email</label>
+                                        <div class="input-group input-group-sm mb-4">
+                                            <input class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ps-2">
+                                        <div class="form-group">
+                                            <label>Producto/Servicio de Interes</label>
+                                            <div class="input-group input-group-sm mb-4">
+                                                <input class="form-control" type="tel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+{#                                <div class="form-group">#}
+{#                                    <label>Email</label>#}
+{#                                    <div class="input-group input-group-sm mb-4">#}
+{#                                        <input class="form-control" type="email">#}
+{#                                    </div>#}
+{#                                </div>#}
+                                <div class="form-group">
+                                    <label>Mensaje</label>
+                                    <textarea name="message" class="form-control form-control-sm border-radius-lg"
+                                        id="message" rows="3"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 text-end my-auto ms-auto">
+                                        <button type="submit"
+                                                class="btn btn-primary btn-round bg-gradient-primary mb-0">Enviar Mensaje
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

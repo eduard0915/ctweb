@@ -1,0 +1,93 @@
+{% extends 'body.html' %}
+
+{% block content %}
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="position-relative col-3" style="padding: 15px 15px 15px 125px">
+                    <a>
+                        <img src="{{ url_for('static', filename='lib/now-ui-design-system-pro-v2.2.0/assets/img/logo_uniphos.png') }}"
+                             alt="uniphos" class="img-fluid shadow" width="150">
+                    </a>
+                </div>
+                <div class="col-9 mx-auto text-lg-start mb-5">
+                    <h2>Tubos Colorimetricos UNIPHOS</h2>
+                    <p>
+                        Tubos Colorimetricos para el control de calidad de Aire Medicinal de acuerdo a la USP vigente y
+                        Resolución 4002 de 2007; adicionalmente utilizados en la medición de trazas de gases de
+                        agroquimicos.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 ms-auto me-auto">
+                    <div class="card card-plain card-blog mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-image position-relative border-radius-lg">
+                                    <div>
+                                        <img class="img border-radius-lg"
+                                             src="{{ url_for('static', filename='lib/now-ui-design-system-pro-v2.2.0/assets/img/tubos_uniphos.png') }}"
+                                             alt="tubos_colorimetricos">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
+                                <h3>
+                                    <a href="javascript:;"
+                                       class="text-dark font-weight-normal text-decoration-underline-hover">Miami raised
+                                        $65 million for pet sitting</a>
+                                </h3>
+                                <p>
+                                    Finding temporary housing for your dog should be as easy as renting an Airbnb.
+                                    That’s the idea behind Rover, which raised $65 million to expand its pet sitting and
+                                    dog-walking businesses.. <a href="javascript:;"
+                                                                class="text-dark text-decoration-underline-hover"> Read
+                                    More </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-plain card-blog mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-image position-relative border-radius-lg">
+                                    <div>
+                                        <img class="img border-radius-lg"
+                                             src="{{ url_for('static', filename='lib/now-ui-design-system-pro-v2.2.0/assets/img/pump_asp40.jpg') }}"
+                                             alt="bomba de muestreo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 my-auto ms-md-3 mt-md-auto mt-4">
+                                <h3>
+                                    <a href="javascript:;"
+                                       class="text-dark font-weight-normal text-decoration-underline-hover">MateLabs
+                                        mixes machine learning</a>
+                                </h3>
+                                <p>
+                                    If you’ve ever wanted to train a machine learning model and integrate it with IFTTT,
+                                    a new offering from MateLabs. MateVerse, a platform where novices can spin out
+                                    machine... <a href="javascript:;" class="text-dark text-decoration-underline-hover">
+                                    Read More </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <iframe class="card rounded-3" width="560" height="315" src="https://www.youtube.com/embed/W_f7TmBctf4"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
