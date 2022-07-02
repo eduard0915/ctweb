@@ -17,7 +17,7 @@
                         </div>
                         <div class="card-body px-1 pt-3">
                             <p class="text-gradient text-dark mb-2 text-sm">Servicios de Software</p>
-                            <a href="https://bpmpro.co/" target="_blank">
+                            <a href="{{ url_for('bpmpro') }}" target="_blank">
                                 <h5>
                                     BPMPRO Software
                                 </h5>
@@ -26,7 +26,7 @@
                                 Implemente electrónicamente sistemas de gestión de calidad como ISO9001, BPM (Buenas
                                 Prácticas de Manufactura) y elimine el uso del papel en su organización.
                             </p>
-                            <a href="https://bpmpro.co/" target="_blank" class="btn btn-outline-primary btn-sm">Ver
+                            <a href="{{ url_for('bpmpro') }}" target="_blank" class="btn btn-outline-primary btn-sm">Ver
                                 más</a>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                                 vía
                                 SMS, llamada telefónica y mail; en caso de datos fuera de límites.
                             </p>
-                            <button type="button" class="btn btn-outline-primary btn-sm">Ver más</button>
+                            <a href="{{ url_for('telemetry') }}" type="button" class="btn btn-outline-primary btn-sm">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                                 Tubos de detección costo-efectivos, ideales para optimización del tiempo de análisis de
                                 impurezas en control de calidad de aire medicinal, de acuerdo a la USP vigente.
                             </p>
-                            <button type="button" class="btn btn-outline-primary btn-sm">Ver más</button>
+                            <a href="{{ url_for('tubes') }}" type="button" class="btn btn-outline-primary btn-sm">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-6 position-relative my-auto">
                     <div class="p-3 text-center">
-                        <a href="#" type="button" class="btn btn-icon-only btn-youtube">
+                        <a href="https://wa.me/573166231887" target="_blank" type="button" class="btn btn-icon-only btn-youtube">
                             <span class="btn-inner--icon"><i class="fa fa-whatsapp"></i></span>
                         </a>
                         <h5 class="mt-3 mb-1">WhatsApp</h5>
@@ -166,7 +166,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- -------- START CONTENT 10 w/ card over right bg image ------- -->
     <div class="page-header min-vh-100">
@@ -214,24 +213,24 @@
                                 </div>
                             </div>
                             <div class="form-group mb-4">
-                                <label>Mensaje</label>
-                                <textarea name="message" class="form-control border-radius-lg" id="message"
-                                          rows="3"></textarea>
+                                <label for="message">Mensaje</label>
+                                <textarea name="message" class="form-control border-radius-lg" id="message" rows="3">
+                                </textarea>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="form-check form-switch mb-4">
-                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
-                                               checked="">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
                                         <label class="form-check-label" for="flexSwitchCheckDefault">Estoy de acuerdo
-                                            con los <a
-                                                    href="javascript:;"
-                                                    class="text-dark text-decoration-underline-hover font-weight-bold">Terminos
+                                            con los <a href="#" class="text-dark text-decoration-underline-hover font-weight-bold">Terminos
                                                 y Condiciones</a>.</label>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn bg-gradient-primary w-100">Enviar Mensaje</button>
+                                <br>
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn bg-info w-100">
+                                        <span style="color: white">Enviar Mensaje</span>
+                                    </button>
                                 </div>
                             </div>
                         </form>
