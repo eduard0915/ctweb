@@ -37,7 +37,7 @@
                     <h6 class="font-weight-bolder text-sm">Compañía</h6>
                     <ul class="flex-column ms-n3 nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
+                            <a class="nav-link" href="{{ url_for('about') }}" target="_blank">
                                 Acerca de nosotros
                             </a>
                         </li>
@@ -50,22 +50,22 @@
                     <h6 class="font-weight-bolder text-sm">Productos</h6>
                     <ul class="flex-column ms-n3 nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://bpmpro.co/" target="_blank">
-                                Software de gestión de calidad
+                            <a class="nav-link" href="{{ url_for('bpmpro') }}" target="_blank">
+                                Software de calidad
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
+                            <a class="nav-link" href="{{ url_for('tubes') }}" target="_blank">
                                 Tubos colorimetricos
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
+                            <a class="nav-link" href="{{ url_for('telemetry') }}" target="_blank">
                                 Sistema de telemetría
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
+                            <a class="nav-link" href="{{ url_for('warm') }}" target="_blank">
                                 Calentadores de líquidos
                             </a>
                         </li>
@@ -77,8 +77,8 @@
                     <h6 class="font-weight-bolder text-sm">Soporte</h6>
                     <ul class="flex-column ms-n3 nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
-                                Contactenos
+                            <a class="nav-link" href="{{ url_for('contact') }}" target="_blank">
+                                Contacténos
                             </a>
                         </li>
                     </ul>

@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'body.html' %}
 
-</body>
-</html>
+{% block content %}
+
+    <section>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-md-0 mb-4">
+                    <h3 class="mb-0">Come and meet us</h3>
+                    <h3>500+ offices</h3>
+                    <p class="mb-4">
+                        Technology is applied science. Science is the study of nature. Mathematics is the language of
+                        nature. Philosophy is the root of mathematics. All tightly interrelated.
+                    </p>
+                    <p class="font-weight-bold"><span class="me-2">-</span> Showcase and embed your work with</p>
+                    <p class="font-weight-bold"><span class="me-2">-</span> Publish across social channels in a click
+                    </p>
+                    <p class="font-weight-bold"><span class="me-2">-</span> Sell your videos worldwide</p>
+                    <p class="font-weight-bold mb-5"><span class="me-2">-</span> Make more profit</p>
+                    <a href="javascript:;" class="text-info text-decoration-underline-hover">Learn More</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-0 rounded-3">
+                        <img src="{{ url_for('static', filename='lib/now-ui-design-system-pro-v2.2.0/assets/img/project12.jpg') }}"
+                             alt="img-blur-shadow" class="img-fluid shadow rounded-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
