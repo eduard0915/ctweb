@@ -1,0 +1,60 @@
+{% extends 'body.html' %}
+
+{% block content %}
+
+    <!-- -------- START Features w/ title, device and stats -------- -->
+    <section class="py-3">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-5 mx-auto">
+                    <div class="device-wrapper position-relative">
+                        <img class="w-100 border-radius-lg shadow"
+                             src="{{ url_for('static', filename='lib/now-ui-design-system-pro-v2.2.0/assets/img/temperature.jpg') }}"
+                             alt="telemetria">
+                    </div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <img src="{{ url_for('static', filename='lib/now-ui-design-system-pro-v2.2.0/assets/img/sensoscientific-logoblue.svg') }}"
+                         alt="telemetria"
+                         width="300"
+                         style="margin-bottom: 40px"
+                         class="img-fluid border-radius-lg border-radius-bottom-start-0 border-radius-bottom-end-0">
+                    <h3 class="mb-0">Sistema de Telemetría SensoScientific</h3>
+                    <p class="lead mb-4" style="text-align: justify">Monitoreo de Temperatura y Húmedad Relativa de áreas, neveras, congeladores,
+                        ultracongeladores de almacenamiento de reactivos, medicamentos, muestras, hemoderivados, entre
+                        otros.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12 col-6 mb-lg-3">
+                            <h5 class="text-info">Características Generales</h5>
+                            <p style="text-align: justify">Seleccionado por la <b>FDA</b> para telemetría de sus propios laboratorios, nuestro sistema
+                                ofrece la más amplia variedad de sensores para medición de temperatura, humedad, presión
+                                diferencial, Dióxido de Carbono, agua líquida e intensidad lumínica. Nuestra solución
+                                tecnológica está alienada con el cumplimiento normativo en farmacias hospitalarias, laboratorios clínicos y
+                                centrales de mezclas, distribuidoras y depositos de medicamentos, industria farmacéutica y alimentaria donde la monitoria ambiental
+                                es crítica.
+                            </p>
+                            <p style="text-align: justify">
+                                La plataforma SensoScientific® está disponible las 24 horas del día, los 7 días de la
+                                semana y se puede acceder desde cualquier lugar, a través de la <b>Plataforma web en un PC,
+                                App iOS o Android (disponibles en App Store y Google Play) desde su celular</b>.
+                            </p>
+                            <p style="text-align: justify">
+                                El sistema SensoScientific® cumple con el estándar <b>21 CFR Parte 11 de la FDA</b>, para
+                                registros y firmas electrónicas. También cumplimos con los siguientes estándares: CDC,
+                                CLIA, NIST Certified, ILAC-MRA y A2LA Certified. En Colombia cumple con la
+                                requerimientos de la ONAC.
+                            </p>
+                                                <a href="{{ url_for('contact') }}"
+                       class="btn btn-sm  bg-info  btn-round mb-0 me-1">
+                        <span style="color: white">Solicitar Cotización</span>
+                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------- END Features w/ title, device and stats -------- -->
+
+{% endblock %}
