@@ -97,5 +97,19 @@ def bpmpro():
     return render_template('bpmpro.html', title=title)
 
 
+# Terminos y Condiciones
+@app.route('/terms_conditions')
+def bpmpro():
+    title = 'Terminos y Condiciones'
+    return render_template('terms_and_conditions.html', title=title)
+
+
+# Terminos y Condiciones
+@app.route('/privacy_policy')
+def bpmpro():
+    title = 'Política de Privacidad'
+    return render_template('privacy_policy.html', title=title)
+
+
 if __name__ == '__main__':
     app.run()
