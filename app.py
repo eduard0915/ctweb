@@ -99,14 +99,14 @@ def bpmpro():
 
 # Terminos y Condiciones
 @app.route('/terms_conditions')
-def bpmpro():
+def terms():
     title = 'Terminos y Condiciones'
     return render_template('terms_and_conditions.html', title=title)
 
 
 # Terminos y Condiciones
 @app.route('/privacy_policy')
-def bpmpro():
+def privacy():
     title = 'Política de Privacidad'
     return render_template('privacy_policy.html', title=title)
 
