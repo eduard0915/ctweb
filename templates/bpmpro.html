@@ -21,23 +21,33 @@
                         </p>
                         <div class="row justify-content-start">
                             <div class="col-md-6">
-                                <div class="info mb-6">
-                                    <i class="ni ni-album-2 h3 text-info"></i>
-                                    <h5>Gestión Documental</h5>
-                                    <p>Creación, actualización y divulgación de documentos; así como control de la
-                                        distribución de
-                                        copias de documentos.
-                                    </p>
-                                </div>
+                                <button type="button" class="btn bg-gradient-info" data-bs-toggle="modal"
+                                        data-bs-target="#gestionDocumental"><i class="fas fa-folder"></i>
+                                    Gestión Documental
+                                </button>
+                                <button type="button" class="btn bg-gradient-info" data-bs-toggle="modal"
+                                        data-bs-target="#pqrs"><i class="fas fa-file-signature"></i>
+                                    PQRS y Felicitaciones
+                                </button>
+                                <button type="button" class="btn bg-gradient-info" data-bs-toggle="modal"
+                                        data-bs-target="#capacitaciones"><i class="fas fa-chalkboard-teacher"></i>
+                                    Capacitaciones
+                                </button>
                             </div>
                             <div class="col-md-6">
-                                <div class="info mb-6">
-                                    <i class="ni ni-atom h3 text-info"></i>
-                                    <h5>Gestión de No Conformes</h5>
-                                    <p>Registre y gestione No Conformes de procesos, auditorias, entre otros; así como
-                                        acciones correctivas y preventivas.
-                                    </p>
-                                </div>
+                                <button type="button" class="btn bg-gradient-info" data-bs-toggle="modal"
+                                        data-bs-target="#gestionNoConformes"><i class="fas fa-user-times"></i>
+                                    Gestión de No Conformes
+                                </button>
+                                <button type="button" class="btn bg-gradient-info" data-bs-toggle="modal"
+                                        data-bs-target="#indicadoresGestion"><i class="fas fa-chart-line"></i>
+                                    Indicadores de Gestión
+                                </button>
+                                <i class="ni ni-chart-bar-32"></i>
+                                <button type="button" class="btn bg-gradient-info" data-bs-toggle="modal"
+                                        data-bs-target="#registrosRepositorios"><i class="fas fa-archive"></i>
+                                    Registros y Repositorios
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -57,48 +67,6 @@
                                     Realiza consultas a un click, integrandose a las operaciones diarias de calidad y
                                     manufactura.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row justify-content-start">
-                            <div class="col-md-3">
-                                <div class="info">
-                                    <i class="ni ni-watch-time h3 text-info"></i>
-                                    <h5>PQRS y Felicitaciones</h5>
-                                    <p>Recepcione las Peticiones, Quejas, Reclamos y Solicitudes de sus clientes;
-                                        y gestione su tratamiento así como la respuesta a sus clientes
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="info mb-6">
-                                    <i class="ni ni-atom h3 text-info"></i>
-                                    <h5>Capacitaciones</h5>
-                                    <p>Genere sus capacitaciones virtuales en video, asígnelas a los usuarios deseados,
-                                        los cuales podrán realizar registro de asistencia y posteriormente su evaluación.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                 <div class="info">
-                                    <i class="ni ni-collection h3 text-info"></i>
-                                    <h5>Indicadores de Gestión</h5>
-                                    <p>Establezca los indicadores de gestión de su organización y registre
-                                        periódicamente los datos; y realice seguimiento a su comportamiento
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="info mb-6">
-                                    <i class="ni ni-atom h3 text-info"></i>
-                                    <h5>Registros y Repositorios</h5>
-                                    <p>Cree sus propias carpetas de almacenamiento de registros, escanee sus
-                                        formatos diligenciados y guárdelos en pdf para facilitar su consulta.
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -235,5 +203,134 @@
         </div>
     </section>
     <!-- -------- END Features w/ title and 3 infos -------- -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="gestionDocumental" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+         aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-default">Gestión Documental</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                      <p>Creación, actualización y divulgación de documentos; así como control de la distribución de
+                          copias de documentos.
+                      </p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gestionNoConformes" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+         aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-default">Gestión de No Conformes</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Registre y gestione No Conformes de procesos, auditorias, entre otros; así como
+                        acciones correctivas y preventivas.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="pqrs" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+         aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-default">PQRS y Felicitaciones</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   <p>Recepcione las Peticiones, Quejas, Reclamos y Solicitudes de sus clientes; y gestione su
+                       tratamiento así como la respuesta a sus clientes
+                   </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="capacitaciones" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+         aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-default">Capacitaciones</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                     <p>Genere sus capacitaciones virtuales en video, asígnelas a los usuarios deseados, los cuales
+                         podrán realizar registro de asistencia y posteriormente su evaluación.
+                     </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="indicadoresGestion" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+         aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-default">Indicadores de Gestión</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Establezca los indicadores de gestión de su organización y registre periódicamente los datos; y
+                        realice seguimiento a su comportamiento
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registrosRepositorios" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+         aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-default">Registros y Repositorios</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Cree sus propias carpetas de almacenamiento de registros, escanee sus formatos diligenciados y
+                        guárdelos en pdf para facilitar su consulta.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
