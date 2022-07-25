@@ -39,11 +39,20 @@
                             </h3>
                             <p style="text-align: justify">
                                 <b>Los calentadores de líquidos Enthermics mantienen las temperaturas correctas para los
-                                fluidos correctos</b>. Caliente de forma segura y precisa los líquidos para irrigación, líquidos
-                                para inyección y medios de contraste; a las temperaturas recomendadas para evitar hipotermia
-                                durante cirugíax y otros procedimientos. Su control digital garantiza un bajo consumo
+                                    fluidos correctos</b>. Caliente de forma segura y precisa los líquidos para
+                                irrigación, líquidos
+                                para inyección y medios de contraste; a las temperaturas recomendadas para evitar
+                                hipotermia
+                                durante cirugía y otros procedimientos. Su control digital garantiza un bajo consumo
                                 de energía y una mínima pérdida de calor mientras mantiene una temperatura precisa.
                             </p>
+                            <div class="col-md-4">
+                                <a type="button" target="_blank"
+                                        href="{{ url_for('static', filename='documents/ficha_technica_calentadores_ec_y_dc.pdf') }}"
+                                        class="btn bg-gradient-info"><i class="fa fa-download"></i>
+                                    Ficha Técnica
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,6 +80,13 @@
                                 irrigación, a la vez que ahorran espacio y tiempo al personal. Caliente los líquidos
                                 en el punto de uso, donde los necesite y/o cuando los necesite.
                             </p>
+                            <div class="col-md-4">
+                                <a type="button" target="_blank"
+                                        href="{{ url_for('static', filename='documents/ficha_technica_ivnow.pdf') }}"
+                                        class="btn bg-gradient-info"><i class="fa fa-download"></i>
+                                    Ficha Técnica
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,30 +94,36 @@
             <br>
             <div class="row">
                 <div class="col-lg-6 mt-5">
-                    <iframe class="card rounded-3" width="560" height="315" src="https://www.youtube.com/embed/NJ8tk-A7ukw"
-                            title="YouTube video player"
+                    <iframe class="card rounded-3" width="600" height="330"
+                            src="https://www.youtube.com/embed/NJ8tk-A7ukw"
+                            title="calentador de líquidos"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                     </iframe>
                 </div>
                 <div class="col-lg-6 pe-lg-5 justify-content-center d-flex flex-column pt-lg-0 pt-3">
-                            <h3>
-                                <a href="#" class="text-dark text-decoration-underline-hover">
-                                    Mejora los Resultados Clínicos
-                                </a>
-                            </h3>
-                            <p style="text-align: justify">
-                                El calentamiento del paciente puede conducir a mejores resultados clínicos.
-                                Los estudios muestran que la hipotermia perioperatoria durante la cirugía puede
-                                provocar complicaciones, como estadías hospitalarias prolongadas, infecciones del
-                                sitio quirúrgico (ISO), morbilidad y mortalidad. La prevención de estas complicaciones
-                                graves se puede encontrar manteniendo la normotermia precalentando a los pacientes
-                                antes de la cirugía y continuando durante el procedimiento quirúrgico.
-                            </p>
-                        </div>
+                    <h3>
+                        <a href="#" class="text-dark text-decoration-underline-hover">
+                            Mejora los Resultados Clínicos
+                        </a>
+                    </h3>
+                    <p style="text-align: justify">
+                        El calentamiento del paciente puede conducir a mejores resultados clínicos.
+                        Los estudios muestran que la hipotermia perioperatoria durante la cirugía puede
+                        provocar complicaciones, como estadías hospitalarias prolongadas, infecciones del
+                        sitio quirúrgico (ISO), morbilidad y mortalidad. La prevención de estas complicaciones
+                        graves se puede encontrar manteniendo la normotermia precalentando a los pacientes
+                        antes de la cirugía y continuando durante el procedimiento quirúrgico.
+                    </p>
+                    <div class="col-md-5">
+                        <a href="{{ url_for('contact') }}"
+                           class="btn btn-sm  bg-info  btn-round mb-0 me-1">
+                            <span style="color: white">Solicitar Cotización</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
 
 {% endblock %}
